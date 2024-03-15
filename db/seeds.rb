@@ -1,6 +1,6 @@
 Horse.destroy_all
 Breed.destroy_all
-
+AdminUser.delete_all
 
 NUMBER_OF_BREEDS = 4
 HORSES_PER_BREED = 4
@@ -20,4 +20,5 @@ end
 
 puts "Created #{Breed.count} Breeds."
 puts "Created #{Horse.count} Horses."
+
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

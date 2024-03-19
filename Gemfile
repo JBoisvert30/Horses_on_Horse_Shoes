@@ -32,6 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 gem 'activeadmin'
 gem 'devise'
+gem 'image_processing', '~> 1.2'
 
 
 group :development, :test do
@@ -61,5 +62,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'webpacker', '~>3.0'
 gem 'psych', '< 4'
-gem 'activeadmin'
-gem 'devise'

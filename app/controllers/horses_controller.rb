@@ -1,4 +1,7 @@
 class HorsesController < ApplicationController
+  include ActiveStorage::SetCurrent
+
+
   # GET /horses/:id
   def show
     @horse = Horse.find(params[:id])
